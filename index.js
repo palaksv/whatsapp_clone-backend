@@ -14,6 +14,6 @@ app.use('/',Route)
 
 Connection();
 
-const PORT=8000;
+const port=process.env.PORT || 3000;
 
-app.listen(PORT,()=>console.log(`server is running on port ${PORT} `));
+app.listen(port,()=>console.log(`server is running on port ${port} `));
